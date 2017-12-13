@@ -7,10 +7,7 @@ const db = require('./config/db');
 db.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
-  db.query("SELECT * FROM Products", function (err, result, fields) {
-    if (err) throw err;
-    console.log(result);
-  })
+
 });
 
 //empty object because we havent decided what  db to use
